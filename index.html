@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h3>Stim Games</h3></div>
+        <button class="button-img" id="modalBtn"><img src="images/shoppingcart.png" alt="shopping-cart"></button>
+    </nav>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-title"><h2 class="shoppingCartTitle">Your Shopping Cart</h2></div>
+            <hr>
+                <div id="modal-body">
+                    <!-- <ul>
+                        <li>
+                            <div class="cart-item">
+                                <img src="images/valorantLogo.png" alt="Valo">
+                                <h3 class="cart-item-name">Item Name</h3>
+                                <h3 class="cart-item-price">Price</h3>
+                            </div>
+                        </li>
+                    </ul>       -->
+                </div>
+        </div>
+      
+    </div>
+
+    <!-- End of Modal -->
+
+    <header class="carousel-container">
+        <div class="carousel-slide">
+            <!-- <img src="Images/CODWZ.jpg" id="lastImage" alt="Call of Duty Warzone"> -->
+            <img src="Images/pubg.jpg"  alt="Pubg">
+            <img src="Images/fifa22.jpg" alt="Fifa 22">
+            <img src="Images/valorant.jpg" alt="Valorant">
+            <img src="Images/dota2.jpg" alt="Dota 2">
+            <img src="Images/CODWZ.jpg" alt="Call of Duty Warzone">
+            <!-- <img src="Images/pubg.jpg" id="firstImage" alt="Pubg"> -->
+        </div>
+
+        <button class="prevBtn" id="prevBtn">&#171;</button>
+        <button class="nextBtn" id="nextBtn"S>&#187;</button>
+    </header>
+
+    <div class="middle-container" id="product-container">
+       <!-- Products Here -->
+    </div>
+    
+
+    <footer class="footer">Copyright</footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
