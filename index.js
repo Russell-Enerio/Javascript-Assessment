@@ -8,7 +8,7 @@ const nextBtn = document.querySelector("#nextBtn")
 
 //Counter
 
-let counter = 1;
+let counter = 0;
 const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = "translateX(" + (-size * counter) + "px)";
@@ -31,55 +31,11 @@ prevBtn.addEventListener("click", ()=>{
 
 
 
-// PRODUCTS
-
-let products = 
-    // {
-    //     product: 
-        [   
-            {
-                "id": 0,
-                "name": "PUBG",
-                "description": "First Person Shooter",
-                "price": "200",
-                "image": "images/pubgLogo.png"
-            },
-            {
-                "id": 1,
-                "name": "Fifa 22",
-                "description": "Football",
-                "price": "220",
-                "image": "images/fifa22Logo.jpg"
-            },
-            {
-                "id": 2,
-                "name": "Dota 2",
-                "description": "Mass Online Battle Arena",
-                "price": "120",
-                "image": "images/dota2Logo.jpg"
-            },
-            {
-                "id": 3,
-                "name": "Valorant",
-                "description": "First Person Shooter",
-                "price": "110",
-                "image": "images/valorantLogo.png"
-            },
-            {
-                "id": 4,
-                "name": "Call of Duty Warzone",
-                "description": "First Person Shooter",
-                "price": "60",
-                "image": "images/warzoneLogo.png"
-            }
-        ]
-    // }
-
 
 let numberOfProd = products.length
 let productList = document.querySelector("#product-container")
 let modalBody = document.querySelector("#modal-body")
-
+let subtotalPrice = document.querySelector("#sub-total")
 for (let i = 0; i < numberOfProd; i++) {
     
     console.log(products[i].name)
@@ -156,6 +112,7 @@ function addToCart(id){
 
 function updateCart(){
     renderCartItems();
+    // renderSubtotal();
 }
 
 
@@ -171,15 +128,29 @@ function renderCartItems(){
                     <div class="cart-item">
                         <img src="${item.image}" alt="Valo">
                         <h3 class="cart-item-name">${item.name}</h3>
-                        <h3 class="cart-item-price">${item.price}</h3>
+                        <h3 class="cart-item-price">$${item.price}</h3>
                     </div>
                 </li>
-            </ul>      
+            </ul>
+               
             </div>  
             `
     })
     
 }
+
+// add Total cart item price
+
+// function renderSubtotal() {
+//     let totalPrice = 0
+//     orders.forEach((item) => {
+//         totalPrice += item.price
+//         subtotalPrice.innerHTML += 
+//         `<h3 class="subTotal" id="sub-total">Total totalPrice</h3>`
+//     })
+//     console.log(totalPrice)
+    
+//   }
 
 
 

@@ -61,7 +61,7 @@
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 660px) and (max-width: 992px) {
     .carousel-slide > img {
         width: 100%;
     }
@@ -102,9 +102,18 @@
   }
 
 
+    @media screen and (min-width: 381px) and (max-width: 659px){
+        .prevBtn{
+            top: 14%;
+        }
+        .nextBtn{
+            top: 14%;
+        }
+    }
   
   /* On screens that are 600px or less */
-  @media screen and (min-width: 376px) and (max-width: 600px) {
+  /* @media screen and (min-width: 376px) and (max-width: 380px) */
+  @media screen and (min-width: 375px) and (max-width: 380px) {
     .carousel-slide > img {
         width: 100%;
     }
@@ -162,7 +171,7 @@
 
     .nextBtn {
         position: absolute;
-        top: 23%;
+        top: 21%;
         z-index: 2;
         right: 5%;
         font-size: 1rem;
@@ -175,7 +184,7 @@
     
     .prevBtn {
         position: absolute;
-        top: 23%;
+        top: 2%;
         z-index: 2;
         left: 5%;
         font-size: 1rem;
